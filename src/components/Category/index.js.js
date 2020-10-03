@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import {
   Link,
   Image
@@ -16,3 +17,8 @@ export const Category = ({ cover = DEFAULT_IMAGE, path = '#', emoji = '?' }) => 
     {emoji}
   </Link>
 )
+Category.propTypes = {
+  cover: PropTypes.string,
+  path: PropTypes.string,
+  emoji: PropTypes.string
+}

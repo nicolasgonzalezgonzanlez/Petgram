@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { PhotoCard } from '../PhotoCard/index'
 import {
   ListSkeleton,
@@ -6,6 +7,7 @@ import {
   ListSkeletonPhoto
 } from '../../styles/categorySkeleton'
 import { getPhotos } from '../../graphql/getPhotos'
+import { Ul } from './styled'
 
 export const ListOfPhotoCard = ({ categoryId }) => {
   const [loading, error, data] = getPhotos(categoryId)
@@ -13,7 +15,7 @@ export const ListOfPhotoCard = ({ categoryId }) => {
   if (error) console.log(error)
 
   return (
-    <ul>
+    <Ul>
       {
         loading
           ? [1, 2, 3].map((key) =>
@@ -26,6 +28,10 @@ export const ListOfPhotoCard = ({ categoryId }) => {
             <PhotoCard key={key} {...element} />
           )
       }
-    </ul>
+    </Ul>
   )
+}
+
+ListOfPhotoCard.propTypes = {
+  categoryId: PropTypes.number
 }

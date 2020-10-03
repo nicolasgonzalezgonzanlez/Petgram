@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
+import { breakpoints } from './breackpoints'
 
 export const GlobalStyle = createGlobalStyle`
   html {
@@ -26,17 +27,30 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
     background: #fefefe;
-    height: 100vh;
+    height: 80vh;
     margin: 0 auto;
-    max-width: 500px;
     overscroll-behavior: none;
-    width: 100%;
+    @media ${breakpoints.xs} { 
+      max-width: 500px;
+    }
+    @media ${breakpoints.sm} { 
+      max-width: 670px;
+    }
+    @media ${breakpoints.md} { 
+      max-width: 670px;
+    }
+    @media ${breakpoints.lg} { 
+      max-width: 770px;
+    }
+    @media ${breakpoints.xl} { 
+      max-width: 770px;
+    }
   }
 
   #app {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
     overflow-x: hidden;
     min-height: 100vh;
-    padding-bottom: 10px;
+    padding-bottom: 10%;
   }
 `

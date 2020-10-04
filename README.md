@@ -5,6 +5,7 @@
 
 ### Tecnologias usadas.
 
+```
 WebPack
 babel
 lint
@@ -13,6 +14,7 @@ reach-router
 GraphQl
 apollo-react-hooks
 styled-components
+```
 
 #### como correr el proyecto en local
 

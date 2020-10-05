@@ -1,13 +1,28 @@
 # Petgram, la red social de tu mascota ⚛️
 
-Proyecto creado con React.js
+### Petgram, es una pequeña app tipo intagram... entra al link y descubre de que se trata
+![texto cualquiera por si no carga la imagen](https://github.com/nicolasgonzalezgonzanlez/Petgram/blob/master/news.gif?raw=true)
 
-Esta usando.
+### Tecnologias usadas.
 
-styled-components
+```
+WebPack
+babel
+lint
 react
 reach-router
 GraphQl
 apollo-react-hooks
+styled-components
+```
 
-Esta contruido con WebPack-babel-lint
+#### como correr el proyecto en local
+
+
+```
+Los comando son 
+    NPM RUN INSTALL
+    NPM RUN BUILD
+    NPM RUN DEV
+```
+Y listo eso es todo, con esto pasos ya tendran PETGRAM, correindo en local
